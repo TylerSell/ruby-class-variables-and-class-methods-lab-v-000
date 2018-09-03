@@ -9,7 +9,7 @@ class Song
   
   def initialize(song, artist, genre)
     @@count += 1 
-    
+    @@artists << artist unless @@artists.any? { |a| a == artist}
   end
 end
 
