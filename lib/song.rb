@@ -11,6 +11,8 @@ class Song
     @@count += 1 
     @@artists << artist unless @@artists.any? { |a| a == artist}
     @@genres << genre unless @@genres.any? { |g| g == genre}
+    @artist = artist
+    @genre = genre
   end
 end
 
